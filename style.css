@@ -9,5 +9,20 @@
         height: 3rem;
     }
 
+    #dados-usuario {
+        width: 100%;
+    }
+
+    #pagamento-entrega {
+        width: 100%;
+    }
+
+    #produtos-checkout {
+        width: 100%;
+    }
+
+    #form-checkout {
+        flex-direction: column;
+    }
 
   }
