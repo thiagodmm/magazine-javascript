@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Hashtag</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="author" content="Thiago de Moura Machado">
+  <meta name="description" content="Projeto de E-Commerce - Frontend utilizando HTML, CSS e Javascript">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  
+</head>
+<body class="bg-stone-400 flex flex-col">
+
+  <section id="carrinho" class="fixed top-0 right-[-300px] bg-indigo-400 h-screen w-[300px] text-slate-200 z-50 duration-200 border-l border-slate-200 flex flex-col justify-between">
+    <div id="cabecalho-carrinho" class="flex justify-between m-4">
+      <p>Meu carrinho</p>
+      <button id="fechar-carrinho" class="hover:text-yellow-300"><i class="fa-solid fa-circle-xmark"></i></button>
+    </div>
+
+    <section id="produtos-carrinho" class="h-3/5 overflow-y-auto flex flex-col m-2">
+
+    </section>
+
+    <strong><p id="preco-total" class="m-4 bg-slate-200 text-green-700 p-1 rounded-sm">Total: R$ 0</p></strong>
+    <button class="bg-slate-200 text-slate-900 p-1 rounded-md m-4 hover:bg-yellow-300" id="finalizar-compra">Finalizar Compra</button>
+  </section>
+
+  <header class="text-xl flex bg-indigo-950 p-2 justify-between sticky top-0 shadow-lg shadow-indigo-400 z-10">
+
+      <img src="assets/img/logo_header_1.png" alt="Logo do Magazine Hashtag" class="h-16">
+
+    <div class="text-slate-200 flex gap-3 items-end mx-2">
+
+      <button id="abrir-carrinho" class="mx-2 hover:text-yellow-300"><i class="fa-solid fa-cart-shopping"></i></button>
+      
+      <a href="pedidos.html" target="_self">
+        <button class="hover:text-yellow-300"><i class="fa-solid fa-user mr-2"></i></button>
+      </a>
+
+    </div>
+  </header>
+
+  <main class="bg-stone-200 flex flex-col items-center">
+    <section id="filtros" class="p-5 flex">
+      <div class="px-2">
+        <input id="exibir-todos" type="radio" name="filtro" class="peer hidden" checked />
+        <label for="exibir-todos" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Todos</label>
+      </div>
+      <div class="px-2">
+        <input id="exibir-nacionais" type="radio" name="filtro" class="peer hidden" />
+        <label for="exibir-nacionais" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Nacionais</label>
+      </div>
+      <div class="px-2">
+        <input id="exibir-importados" type="radio" name="filtro" class="peer hidden" />
+        <label for="exibir-importados" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Importados</label>
+      </div>
+    </section>
+    <section id="container-produto" class="flex flex-wrap p-5 justify-center gap-6">
+      
+    </section>
+  </main>
+
+  <script type="module" src="main.js"></script>
+
+</body>
+</html>
